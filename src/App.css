@@ -1,0 +1,7 @@
+.todo-list {
+  align-self: "center";
+  width: 19%;
+  margin-top: 5%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.596);
+  border-radius: 10px;
+}
