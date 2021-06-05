@@ -12,6 +12,21 @@ const todoList = [
     text: "This is the task you want to do5",
     completed: false,
   },
+  {
+    id: 6,
+    text: "This is the task you want to do5",
+    completed: false,
+  },
+  {
+    id: 7,
+    text: "This is the task you want to do5",
+    completed: false,
+  },
+  {
+    id: 8,
+    text: "This is the task you want to do5",
+    completed: false,
+  },
 ];
 
 export default todoList;
