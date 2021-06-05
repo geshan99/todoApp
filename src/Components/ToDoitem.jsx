@@ -11,7 +11,7 @@ function ToDoitem(prop) {
         onChange={() => prop.handleCheck(prop.id)}
       />
 
-      <span>{prop.text}</span>
+      <span className={prop.completed && "comp-text"}>{prop.text}</span>
     </div>
   );
 }
