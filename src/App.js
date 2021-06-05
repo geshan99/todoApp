@@ -9,15 +9,24 @@ class App extends Component {
     this.state = {
       toDos: todoList,
     };
+    this.handleCheck = this.handleCheck.bind(this);
   }
 
   render() {
     const todos = this.state.toDos.map((task) => (
-      <ToDoitems key={task.id} text={task.text} completed={task.completed} />
+      <ToDoitems
+        handleCheck={this.handleCheck}
+        key={task.id}
+        text={task.text}
+        completed={task.completed}
+      />
     ));
     return (
       <div className="container bg-dark  text-white todo-list">{todos}</div>
     );
+  }
+  handleCheck(id) {
+    console.log("checked", id);
   }
 }
 
