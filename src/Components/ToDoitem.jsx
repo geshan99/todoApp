@@ -10,6 +10,7 @@ function ToDoitem(prop) {
         checked={prop.completed}
         onChange={() => prop.handleCheck(prop.id)}
       />
+
       <span>{prop.text}</span>
     </div>
   );

@@ -19,6 +19,7 @@ class App extends Component {
         key={task.id}
         text={task.text}
         completed={task.completed}
+        id={task.id}
       />
     ));
     return (
@@ -26,7 +27,15 @@ class App extends Component {
     );
   }
   handleCheck(id) {
-    console.log("checked", id);
+    this.setState((prevState) => {
+      const updatedTodos = prevState.toDos.map((todo) => {
+        if (todo.id === id) {
+          todo.completed = !todo.completed;
+        }
+        return todo;
+      });
+      return { updatedTodos };
+    });
   }
 }
 
